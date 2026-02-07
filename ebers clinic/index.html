@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBERS Medical Diagnostic Center | Precision in Sétif</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        'medical-blue': '#0056b3',
+                        'medical-dark': '#001a33',
+                        'vitality-green': '#a3d9cf',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white text-gray-900 antialiased">
+
+    <header class="absolute top-0 w-full z-50">
+        <nav class="max-w-7xl mx-auto px-6 h-20 md:h-24 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-black text-white tracking-tighter italic">EBERS</a>
+            
+            <div class="hidden lg:flex space-x-10 text-xs font-bold uppercase tracking-[0.2em]">
+                <a href="index.html" class="text-white border-b-2 border-vitality-green pb-1">Home</a>
+                <a href="about.html" class="text-white/70 hover:text-white transition-colors">About</a>
+                <a href="services.html" class="text-white/70 hover:text-white transition-colors">Services</a>
+                <a href="equipment.html" class="text-white/70 hover:text-white transition-colors">Equipment</a>
+                <a href="contact.html" class="text-white/70 hover:text-white transition-colors">Contact</a>
+            </div>
+    
+            <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-3 py-2 text-[10px] font-bold text-white uppercase tracking-widest">
+                    <button class="text-vitality-green">EN</button>
+                    <span class="opacity-20">|</span>
+                    <button class="opacity-50 hover:opacity-100 transition-opacity">FR</button>
+                    <span class="opacity-20">|</span>
+                    <button class="opacity-50 hover:opacity-100 transition-opacity">AR</button>
+                </div>
+
+                <a href="tel:+21336804040" class="hidden sm:block bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-2xl text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-medical-dark transition-all">
+                    036 80 40 40
+                </a>
+    
+                <button id="mobile-menu-button" class="lg:hidden text-white p-2 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    
+        <div id="mobile-menu" class="hidden lg:hidden bg-medical-dark/95 shadow-2xl border-b border-white/10 backdrop-blur-xl">
+            <div class="flex flex-col p-6 space-y-4 text-center">
+                <a href="index.html" class="text-white font-bold uppercase tracking-widest py-3 border-b border-white/5">Home</a>
+                <a href="about.html" class="text-white/70 font-bold uppercase tracking-widest py-3 border-b border-white/5">About</a>
+                <a href="services.html" class="text-white/70 font-bold uppercase tracking-widest py-3 border-b border-white/5">Services</a>
+                <a href="equipment.html" class="text-white/70 font-bold uppercase tracking-widest py-3 border-b border-white/5">Equipment</a>
+                <a href="contact.html" class="text-white/70 font-bold uppercase tracking-widest py-3">Contact</a>
+                <a href="tel:+21336804040" class="sm:hidden bg-vitality-green text-medical-dark py-4 rounded-xl font-black uppercase tracking-tighter">
+                    Emergency: 036 80 40 40
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
+
+    <main>
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-medical-dark">
+            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&q=80" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-40 scale-105" alt="Medical Facility">
+            <div class="absolute inset-0 bg-gradient-to-r from-medical-dark via-medical-dark/60 to-transparent"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+                <div class="max-w-3xl">
+                    <span class="inline-block px-4 py-1 mb-6 text-xs font-bold tracking-[0.4em] text-vitality-green uppercase bg-white/10 rounded-full">Sétif's Diagnostic Leader</span>
+                    <h1 class="text-6xl md:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tighter">
+                        Precision <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-vitality-green to-blue-300">Diagnostics.</span>
+                    </h1>
+                    <p class="text-blue-100/80 text-lg md:text-2xl mb-12 max-w-xl leading-relaxed font-light">
+                        Advanced imaging and laboratory services delivered with compassionate care. Open 24/7 for your health.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-5">
+                        <a href="contact.html" class="bg-medical-blue text-white px-8 py-5 rounded-[1.5rem] font-bold text-sm uppercase tracking-widest hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/40 transition-all">
+                            Book Appointment
+                        </a>
+                        <a href="services.html" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-5 rounded-[1.5rem] font-bold text-sm uppercase tracking-widest hover:bg-white/20 transition-all">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section class="py-32 bg-[#FBFDFF]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight text-medical-dark mb-4">Engineered for Accuracy</h2>
+                    <div class="w-20 h-1.5 bg-medical-blue mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="group">
+                        <div class="w-20 h-20 bg-blue-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-medical-blue group-hover:rotate-6 transition-all duration-500">
+                            <i class="fas fa-bullseye text-3xl text-medical-blue group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Precision First</h3>
+                        <p class="text-gray-500 leading-relaxed">We utilize global-standard protocols to ensure your diagnostic results are 100% reliable.</p>
+                    </div>
+                    <div class="group">
+                        <div class="w-20 h-20 bg-emerald-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-emerald-500 group-hover:rotate-6 transition-all duration-500">
+                            <i class="fas fa-shield-virus text-3xl text-emerald-500 group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Sterile Environment</h3>
+                        <p class="text-gray-500 leading-relaxed">Hygiene is our obsession. We follow international safety standards for every patient.</p>
+                    </div>
+                    <div class="group">
+                        <div class="w-20 h-20 bg-purple-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-purple-600 group-hover:rotate-6 transition-all duration-500">
+                            <i class="fas fa-microchip text-3xl text-purple-600 group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Modern Tech</h3>
+                        <p class="text-gray-500 leading-relaxed">Equipped with the latest MRI, CT, and Laboratory hardware for detailed insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-medical-blue font-bold uppercase tracking-widest text-xs mb-4 block">Our Location</span>
+                        <h2 class="text-4xl md:text-5xl font-black text-medical-dark mb-8 tracking-tighter leading-tight">Expert care, <br>right in Sétif.</h2>
+                        <div class="space-y-6 mb-10">
+                            <p class="text-gray-500 text-lg">Find us at Coop El Wafaa, Cité Hachmi. We are strategically located for easy access from all parts of the city.</p>
+                            <a href="https://www.google.com/maps/place/EBERS/@36.2041783,5.426396,1338m/data=!3m1!1e3!4m6!3m5!1s0x12f3150009ea5249:0x2b88751516090135!8m2!3d36.2041783!4d5.4303397!16s%2Fg%2F11ydjtzrrr?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="inline-flex items-center gap-4 bg-medical-dark text-white px-8 py-5 rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-medical-blue transition-all">
+                                Get Directions <i class="fas fa-location-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="h-[450px] rounded-[2.5rem] overflow-hidden shadow-2xl relative border-8 border-gray-50">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.737494511516!2d5.4243!3d36.19!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f3143377777777%3A0x7777777777777777!2sSetif!5e0!3m2!1sen!2sdz!4v1700000000000!5m2!1sen!2sdz" 
+                            class="w-full h-full" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-medical-dark py-16">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-white">
+                <div class="flex items-center gap-6 border-b md:border-b-0 md:border-r border-white/10 pb-8 md:pb-0">
+                    <i class="fas fa-map-marker-alt text-2xl text-vitality-green"></i>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-white/50">Location</p>
+                        <p class="font-medium">Coop El Wafaa, Cité Hachmi, Sétif</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 border-b md:border-b-0 md:border-r border-white/10 pb-8 md:pb-0">
+                    <i class="fas fa-phone-alt text-2xl text-vitality-green"></i>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-white/50">Contact Us</p>
+                        <p class="font-medium">+213 36 80 40 40</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6">
+                    <i class="fas fa-clock text-2xl text-vitality-green"></i>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-white/50">Availability</p>
+                        <p class="font-medium">Open 24 Hours / 7 Days</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#000a14] py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-white text-2xl font-black mb-8 italic">EBERS</h3>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:space-x-8 mb-12 text-sm font-bold uppercase tracking-widest text-white/40">
+                <a href="index.html" class="hover:text-vitality-green transition-colors">Home</a>
+                <a href="about.html" class="hover:text-vitality-green transition-colors">About</a>
+                <a href="services.html" class="hover:text-vitality-green transition-colors">Services</a>
+                <a href="equipment.html" class="hover:text-vitality-green transition-colors">Equipment</a>
+                <a href="contact.html" class="hover:text-vitality-green transition-colors">Contact</a>
+            </div>
+            <div class="w-full h-px bg-white/5 mb-12"></div>
+            <p class="text-gray-600 text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] md:tracking-[0.4em] leading-loose">
+                © 2026 EBERS Medical — Premium Healthcare Algeria
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

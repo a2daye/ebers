@@ -1,0 +1,33 @@
+<!-- EBERS Global Header - loaded via js/header.js -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/80">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-24 py-5">
+      <!-- Logo: EBERS bold only -->
+      <a href="index.html" class="text-2xl sm:text-3xl font-bold text-medical-blue hover:text-medical-blue-dark transition-colors duration-300 nav-brand">
+        EBERS
+      </a>
+      <!-- Desktop nav links - bigger with hover animations -->
+      <div class="hidden lg:flex items-center justify-center flex-1 space-x-14">
+        <a href="index.html" data-nav="home" class="nav-link text-xl font-semibold">Home</a>
+        <a href="about.html" data-nav="about" class="nav-link text-xl font-semibold">About</a>
+        <a href="services.html" data-nav="services" class="nav-link text-xl font-semibold">Services</a>
+        <a href="equipment.html" data-nav="equipment" class="nav-link text-xl font-semibold">Equipment</a>
+        <a href="contact.html" data-nav="contact" class="nav-link text-xl font-semibold">Contact</a>
+      </div>
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-3 rounded-xl text-gray-600 hover:bg-soft-gray hover:text-medical-blue transition-all duration-300" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars text-3xl"></i>
+      </button>
+    </div>
+    <!-- Mobile nav -->
+    <div id="mobile-menu" class="hidden lg:hidden pb-5 border-t border-gray-100 mt-2 pt-5">
+      <div class="flex flex-col space-y-2 text-lg">
+        <a href="index.html" data-nav-mobile="home" class="nav-link-mobile py-4 px-5 rounded-xl hover:bg-medical-blue/5 hover:text-medical-blue transition-all duration-300">Home</a>
+        <a href="about.html" data-nav-mobile="about" class="nav-link-mobile py-4 px-5 rounded-xl hover:bg-medical-blue/5 hover:text-medical-blue transition-all duration-300">About</a>
+        <a href="services.html" data-nav-mobile="services" class="nav-link-mobile py-4 px-5 rounded-xl hover:bg-medical-blue/5 hover:text-medical-blue transition-all duration-300">Services</a>
+        <a href="equipment.html" data-nav-mobile="equipment" class="nav-link-mobile py-4 px-5 rounded-xl hover:bg-medical-blue/5 hover:text-medical-blue transition-all duration-300">Equipment</a>
+        <a href="contact.html" data-nav-mobile="contact" class="nav-link-mobile py-4 px-5 rounded-xl hover:bg-medical-blue/5 hover:text-medical-blue transition-all duration-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+</header>
